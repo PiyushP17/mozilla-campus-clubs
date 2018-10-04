@@ -5,21 +5,22 @@
 
   <body>
 
+    {% include gtm.html %}
+
     {% include header.html %}
 
     {% include jumbotron.html %}
 
     <div class="page-content">
-      <div class="container">
-        <div class="home">
-          {{ content }}
-        </div>
+      <div class="home">
+        {{ content }}
       </div>
     </div>
 
     {% include footer.html %}
 
+    {% include js.html %}
+
   </body>
 
-  {% include js.html %}
 </html>
